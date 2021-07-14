@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--Begining of html-->
+<html>
+<!--Begining of head-->
+<head>
+    <!--Tite of the app-->
+    <title>Ninja's TODO List</title>
+    <!--CSS Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/6f0f83005a.js" crossorigin="anonymous"></script>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+    <!--Viewport fo responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale = 0.86, maximum-scale=3.0, minimum-scale=0.86">
+</head>
+<!--End of head-->
+
+<!--Begining of body-->
+<body>
+    <!--Begining of header-->
+    <div id="header">
+        <h1>Ninja's TODO List</h1>
+    </div>
+    <!--End of header-->
+
+    <div id="topline"></div> <!--This adds a violet bar on top, just for styling-->
+
+    <!--Begining of todo-display, the main div where the todo list exists-->
+    <div id="todo-display">
+
+        <!--Begining of the input form-->
+        <form id="todo-form">
+            <input type="text" id="task-description-input" placeholder="Add a description of the task" required>
+            <button id="submit-button" type="submit"><i class="fa fa-plus" aria-hidden="true"></i></button>
+        </form>
+        <!--End of the input form-->
+
+        <!--Begining of the stats div which sows the stats of the tasks-->
+        <div id="stats">
+            <p id="completed-stats">Completed Tasks : 0</p>
+            <p id="incomplete-stats">Pending Tasks : 5</p>
+        </div>
+        <!--End of the stats div-->
+
+        <hr /> <!--Line break-->
+
+        <!--Every TODO Item is rendered inside this ul tag-->
+        <ul id="tasks-list" type="none"></ul>
+
+    </div>
+    <!--End of Todo display-->
+
+</body>
+<!--End of body-->
+
+<!--Adding the script tag-->
+<script type="text/javascript" src="script.js"></script>
+
+</html>
+<!--End of HTML-->

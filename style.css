@@ -1,0 +1,182 @@
+/*Styling for the body tag*/
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #F0EBF8;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+/*End of body tag styling*/
+
+/*Styling for the header of the app */
+#header {
+    background-color: #673AB7;
+    margin-top: -1.5rem;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-top: 0.5rem;
+    height: 5rem;
+}
+/*End of header tag styling */
+
+/*The top violet line displayed above the todo div */
+#topline {
+    position: relative;
+    left: 20vw;
+    top: 7.6vh;
+    background-color: #673AB7;
+    height: 0.5rem;
+    width: 62.5vw;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+/*End of the topline styling */
+
+/*Styling of the parent todo div */
+#todo-display {
+    position: absolute;
+    left: 20vw;
+    top: 20vh;
+    height: auto;
+    width: 60vw;
+    padding: 1rem;
+    background-color: white;
+}
+/*End of parent todo div styling */
+
+
+/*Styling the input form */
+input[type="text"] {
+    width: 50vw;
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-right: 1rem;
+    margin-left: 1.5rem;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    font-size: 1.1rem;
+    font-style: 'Baloo Tammudu 2', cursive;
+}
+
+input[type="text"]::placeholder {
+    font-size: 1.1rem;
+    font-style: 'Baloo Tammudu 2', cursive;
+}
+
+button[type="submit"] {
+    border: none;
+    background-color: #673AB7;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+}
+/* End of input form styling */
+
+/*Styling of the stats div which shows stats about the completed and pending tasks */
+#stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    padding-right: 2.5rem;
+    margin-bottom: -1rem;
+}
+/*End of the stats div */
+
+/*Styling of the global div for individual todo item */
+.tasks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 55vw;
+    margin-left: -1rem;
+    padding-right: 5rem;
+}
+/*End of global todo div styling */
+
+/*Adding cursor pointer to the delete button */
+.tasks i{
+    cursor: pointer;
+    margin-left: -1rem;
+    margin-top: 0.5rem;
+}
+
+/*Styling of the wrapper div which has the todo description and the checkbox */
+.wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+/*End of wrapper div styling */
+
+/*Styling for the check box which marks tasks as completed */
+.wrap .mark-completed-button{
+    height: 0.7rem;
+    width: 0.7rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: 0.8rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+/*End of styling*/
+
+
+/*-----------MEDIA QUERIES----------------*/
+
+@media only screen and (max-width: 870px){
+
+    #topline{
+        width: 84.5vw;
+        left: 5vw;
+    }
+    #todo-display{
+        width: 80vw;
+        left: 5vw;
+    }
+
+    input[type="text"] {
+        width: 60vw;
+    }
+
+    #stats{
+        font-size: 1rem;
+    }
+
+    .tasks {
+        width: 75vw;
+    }
+
+    .wrap {
+        font-size: 1.2rem;
+    }
+
+    .wrap .mark-completed-button {
+        margin-left: -1.5rem;
+        margin-right: 1rem;
+        margin-top: 0.6rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 620px){
+
+    #topline{
+        width: 86.5vw;
+    }
+    
+    input[type="text"] {
+        width: 55vw;
+    }
+}
+
+
+
